@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:orientation="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">  
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="vertical">  
+        <FrameLayout 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/login_top">  
+            <LinearLayout 
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content" 
+                android:orientation="vertical" 
+                android:layout_margin="30dp">  
+                <EditText android:id="@+id/txtUsername" 
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content" 
+                    android:hint="Username" 
+                     android:inputType="textEmailAddress" 
+                    android:drawableLeft="@drawable/ic_lock" />  
+                <EditText 
+                    android:id="@+id/txtPassword" 
+                    android:layout_marginTop="40dp" 
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content" 
+                    android:hint="Password" 
+                     android:inputType="textPassword" 
+                    android:drawableLeft="@drawable/ic_key" /> 
+
+                <Button
+             android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnLogin" 
+            android:layout_margin="5dp" 
+       />
+            </LinearLayout>  
+        </FrameLayout>  
+     </LinearLayout>  
+</RelativeLayout>
